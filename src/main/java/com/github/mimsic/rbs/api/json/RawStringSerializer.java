@@ -6,9 +6,9 @@ import com.fasterxml.jackson.databind.ser.std.StdSerializer;
 
 import java.io.IOException;
 
-public class StringRawSerializer extends StdSerializer<Object> {
+public class RawStringSerializer extends StdSerializer<Object> {
 
-    public StringRawSerializer() {
+    public RawStringSerializer() {
         super(Object.class);
     }
 

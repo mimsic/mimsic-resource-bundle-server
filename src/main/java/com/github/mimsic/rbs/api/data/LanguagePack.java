@@ -1,7 +1,7 @@
 package com.github.mimsic.rbs.api.data;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.github.mimsic.rbs.api.json.StringRawSerializer;
+import com.github.mimsic.rbs.api.json.RawStringSerializer;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -17,7 +17,7 @@ import lombok.ToString;
 @ToString
 public class LanguagePack<T> {
 
-    @JsonSerialize(using = StringRawSerializer.class)
+    @JsonSerialize(using = RawStringSerializer.class)
     private T content;
 
     private String language;
