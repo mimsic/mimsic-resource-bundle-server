@@ -3,8 +3,8 @@ package com.github.mimsic.rbs.api.json;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.github.mimsic.rbs.api.data.LanguagePack;
 import com.github.mimsic.rbs.api.provider.impl.LanguagePackProvider;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,7 +27,7 @@ public class RawStringSerializerTest {
     private String enString;
     private int iterations;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
 
         enBundle = ResourceBundle.getBundle(LanguagePackProvider.BUNDLE_PACKAGE, new Locale("en"));
